@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Kahoot Assistant</string>
+    <string name="choose_area_title">Choose screenshot area</string>
+    <string name="choose_area_desc">Choose an area where <b>Kahoot</b> question would appear on screen.</string>
+    <string name="google_search_title">Click the bubble</string>
+    <string name="google_search_desc">when the question appears, capture it on screen. The App will automatically <b>Google it</b> for you.</string>
+    <string name="result_title">Select your answer</string>
+    <string name="result_desc">You probably know the answer now. If not, good luck.</string>
+    <string name="try_title">LET\'S START</string>
+    <string name="got_it">GOT IT</string>
+    <string name="request_draw_permission_title">NEED PERMISSIONS</string>
+    <string name="request_draw_permission_desc">We need draw overlay permission to display control bubble on screen, and screenshot permission to … take screenshot, of course.</string>
+    <string name="permission_denied">Cannot proceed, permission denied</string>
+    <string name="done">DONE</string>
+    <string name="not_enough_mem">Text Recognition model not downloaded\nCause: Not enough memory</string>
+    <string name="text_recog_error">Error occurred while trying to parse text</string>
 </resources>

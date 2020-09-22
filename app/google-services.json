@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "102822874897",
+    "firebase_url": "https://kahoot-assistant.firebaseio.com",
+    "project_id": "kahoot-assistant",
+    "storage_bucket": "kahoot-assistant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102822874897:android:ec89494c317a478d0a86b0",
+        "android_client_info": {
+          "package_name": "com.mgt.kahoot_assistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "102822874897-j62bncrc623ae2tgv0cbqr5uhtmhnnsn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfKGGdmcQMrqxTovAq2V4PNO3stkwSNVw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "102822874897-j62bncrc623ae2tgv0cbqr5uhtmhnnsn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

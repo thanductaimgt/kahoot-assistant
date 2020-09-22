@@ -6,19 +6,53 @@
     android:layout_height="match_parent"
     tools:background="@android:color/black">
 
-    <com.example.kahoot_assistant.DrawView
+    <com.mgt.kahoot_assistant.DrawView
         android:id="@+id/drawView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#50ffffff" />
+        android:layout_height="match_parent" />
 
-    <ImageView
-        android:id="@+id/checkImgView"
-        android:layout_width="50dp"
-        android:layout_height="0dp"
-        android:layout_margin="16dp"
-        android:src="@drawable/check"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/doneLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_gradient"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:translationY="30dp"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/doneButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="34dp"
+            android:src="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/doneAnimView"
+            app:layout_constraintEnd_toEndOf="@id/doneAnimView"
+            app:layout_constraintStart_toStartOf="@id/doneAnimView"
+            app:layout_constraintTop_toTopOf="@id/doneAnimView"
+            app:riv_oval="true" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/doneAnimView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/done" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/done"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/doneAnimView"
+            app:layout_constraintEnd_toEndOf="@id/doneAnimView"
+            app:layout_constraintStart_toStartOf="@id/doneAnimView"
+            app:layout_constraintTop_toTopOf="@id/doneAnimView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,16 +4,110 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="com.mgt.kahoot_assistant.MainActivity">
+
+    <ImageView
+        android:id="@+id/kahootIcon"
+        android:layout_width="120dp"
+        android:layout_height="0dp"
+        android:scaleX="0"
+        android:scaleY="0"
+        android:src="@drawable/kahoot"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:rotation="10"
+        tools:scaleX="=1"
+        tools:scaleY="=1"
+        tools:translationY="-20px" />
+
+    <ImageView
+        android:id="@+id/googleIcon"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:scaleX="0"
+        android:scaleY="0"
+        android:src="@drawable/google"
+        app:layout_constraintBottom_toBottomOf="@id/kahootIcon"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/kahootIcon"
+        tools:scaleX="=1"
+        tools:scaleY="=1"
+        tools:translationY="-20px" />
 
     <TextView
-        android:id="@+id/tv"
+        android:id="@+id/appNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="10dp"
+        android:alpha="0"
+        android:fontFamily="casual"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kahootIcon"
+        tools:alpha="1" />
 
+    <!--    <Button-->
+    <!--        android:id="@+id/testButton"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="16dp"-->
+    <!--        android:text="testAnim"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView" />
+
+    <me.relex.circleindicator.CircleIndicator3
+        android:id="@+id/circleIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:alpha="0"
+        android:fontFamily="casual"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:alpha="1" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/appIcon"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:alpha="0"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toBottomOf="@id/titleTextView"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@id/titleTextView"
+        app:layout_constraintTop_toTopOf="@id/titleTextView"
+        app:riv_border_color="@android:color/white"
+        app:riv_border_width="2dp"
+        app:riv_corner_radius="10dp"
+        tools:alpha="1" />
 </androidx.constraintlayout.widget.ConstraintLayout>

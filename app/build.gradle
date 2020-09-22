@@ -2,12 +2,15 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.example.kahoot_assistant"
+        applicationId "com.mgt.kahoot_assistant"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
@@ -23,8 +26,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility "1.8"
+        sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
 }
 
@@ -39,4 +45,16 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     implementation 'com.google.android.gms:play-services-mlkit-text-recognition:16.1.1'
+
+    implementation 'com.google.android.material:material:1.3.0-alpha02'
+    implementation 'me.relex:circleindicator:2.1.4'
+    implementation 'com.airbnb.android:lottie:3.4.2'
+    //round corners imageview
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    //multiDex
+//    implementation 'com.android.support:multidex:1.0.3'
+
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx:17.2.1'
 }
