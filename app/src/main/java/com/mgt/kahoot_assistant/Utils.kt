@@ -4,6 +4,7 @@ import android.app.Service
 import android.graphics.PixelFormat
 import android.os.Build
 import android.util.DisplayMetrics
+import android.view.View
 import android.view.WindowManager
 
 object Utils {
@@ -40,5 +41,11 @@ object Utils {
             WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE,
             PixelFormat.TRANSLUCENT
         )
+    }
+}
+
+fun WindowManager.removeViewSafe(view: View) {
+    if (view.isAttachedToWindow) {
+        removeView(view)
     }
 }

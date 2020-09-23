@@ -92,7 +92,7 @@ class ControlService : Service() {
                 rect.sort()
 
                 SharedPrefsManager.setCaptureRect(rect)
-                Utils.getWindowManager().removeView(rectView)
+                Utils.getWindowManager().removeViewSafe(rectView)
                 actionView.visibility = View.VISIBLE
                 controlView.visibility = View.VISIBLE
             }
@@ -210,7 +210,7 @@ class ControlService : Service() {
         val cropImgView = ImageView(this)
         cropImgView.setImageBitmap(cropBitmap)
         cropImgView.foreground = ColorDrawable(Color.parseColor("#50000000"))
-        cropImgView.setOnClickListener { Utils.getWindowManager().removeView(cropImgView) }
+        cropImgView.setOnClickListener { Utils.getWindowManager().removeViewSafe(cropImgView) }
         val params = Utils.createWindowParams(
             WindowManager.LayoutParams.WRAP_CONTENT,
             WindowManager.LayoutParams.WRAP_CONTENT
@@ -225,7 +225,7 @@ class ControlService : Service() {
         Utils.getWindowManager().addView(cropImgView, params)
         Handler(Looper.getMainLooper()).postDelayed({
             if (cropImgView.isAttachedToWindow) {
-                Utils.getWindowManager().removeView(cropImgView)
+                Utils.getWindowManager().removeViewSafe(cropImgView)
             }
         }, 1000)
 
@@ -260,10 +260,9 @@ class ControlService : Service() {
 
     override fun onDestroy() {
         super.onDestroy()
-        Utils.getWindowManager().removeView(controlView)
-        if (controlView.isAttachedToWindow) {
-            Utils.getWindowManager().removeView(rectView)
-        }
+        Utils.getWindowManager().removeViewSafe(controlView)
+        Utils.getWindowManager().removeViewSafe(rectView)
+        Utils.getWindowManager().removeViewSafe(actionView)
         stopCapture()
     }
 
