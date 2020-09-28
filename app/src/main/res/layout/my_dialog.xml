@@ -67,7 +67,8 @@
                 app:cardCornerRadius="18dp"
                 app:layout_constraintEnd_toStartOf="@id/button2Layout"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/descTextView">
+                app:layout_constraintTop_toBottomOf="@id/descTextView"
+                app:layout_goneMarginEnd="24dp">
 
                 <TextView
                     android:id="@+id/buttonTextView1"
@@ -94,6 +95,7 @@
                 app:layout_constraintEnd_toStartOf="@id/button3Layout"
                 app:layout_constraintStart_toEndOf="@id/button1Layout"
                 app:layout_constraintTop_toBottomOf="@id/descTextView"
+                app:layout_goneMarginEnd="24dp"
                 tools:visibility="visible">
 
                 <TextView

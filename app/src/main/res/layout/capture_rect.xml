@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:background="@android:color/black">
 
-    <com.mgt.kahoot_assistant.DrawView
+    <com.mgt.quiz_assistant.DrawView
         android:id="@+id/drawView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

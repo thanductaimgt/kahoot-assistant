@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "102822874897",
-    "firebase_url": "https://kahoot-assistant.firebaseio.com",
-    "project_id": "kahoot-assistant",
-    "storage_bucket": "kahoot-assistant.appspot.com"
+    "project_number": "253163226139",
+    "firebase_url": "https://quiz-assistant-78e60.firebaseio.com",
+    "project_id": "quiz-assistant-78e60",
+    "storage_bucket": "quiz-assistant-78e60.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:102822874897:android:ec89494c317a478d0a86b0",
+        "mobilesdk_app_id": "1:253163226139:android:b21dd7c21ece7a0d4824be",
         "android_client_info": {
-          "package_name": "com.mgt.kahoot_assistant"
+          "package_name": "com.mgt.quiz_assistant"
         }
       },
       "oauth_client": [
         {
-          "client_id": "102822874897-j62bncrc623ae2tgv0cbqr5uhtmhnnsn.apps.googleusercontent.com",
+          "client_id": "253163226139-fs8fhgqo0iheel28c7nf5r4tgvh8hdgo.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDfKGGdmcQMrqxTovAq2V4PNO3stkwSNVw"
+          "current_key": "AIzaSyDANg-K1qMjmb2TVEbf9cOO9IRaNXl2-u4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "102822874897-j62bncrc623ae2tgv0cbqr5uhtmhnnsn.apps.googleusercontent.com",
+              "client_id": "253163226139-fs8fhgqo0iheel28c7nf5r4tgvh8hdgo.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

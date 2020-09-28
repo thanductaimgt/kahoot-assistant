@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mgt.kahoot_assistant">
+    package="com.mgt.quiz_assistant">
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
-        android:name=".MyApp"
+        android:name="com.mgt.quiz_assistant.MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -17,13 +17,13 @@
             android:name="com.google.mlkit.vision.DEPENDENCIES"
             android:value="ocr" /> <!-- To use multiple models: android:value="ocr,model2,model3" -->
         <service
-            android:name=".ControlService"
+            android:name="com.mgt.quiz_assistant.ControlService"
             android:enabled="true"
             android:exported="true"
             android:foregroundServiceType="mediaProjection" />
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.mgt.quiz_assistant.MainActivity"
             android:excludeFromRecents="true"
             android:theme="@style/Theme.Transparent">
             <intent-filter>

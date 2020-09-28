@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mgt.kahoot_assistant.MainActivity">
+    tools:context="com.mgt.quiz_assistant.MainActivity">
 
     <ImageView
         android:id="@+id/kahootIcon"
@@ -12,7 +12,7 @@
         android:layout_height="0dp"
         android:scaleX="0"
         android:scaleY="0"
-        android:src="@drawable/kahoot"
+        android:src="@drawable/ic_quiz"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -107,7 +107,7 @@
         app:layout_constraintEnd_toStartOf="@id/titleTextView"
         app:layout_constraintTop_toTopOf="@id/titleTextView"
         app:riv_border_color="@android:color/white"
-        app:riv_border_width="2dp"
+        app:riv_border_width="1px"
         app:riv_corner_radius="10dp"
         tools:alpha="1" />
 </androidx.constraintlayout.widget.ConstraintLayout>
