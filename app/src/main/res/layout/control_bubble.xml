@@ -21,7 +21,7 @@
         android:background="@drawable/ic_quiz"
         android:paddingTop="24dp"
         android:paddingHorizontal="16dp"
-        android:src="@drawable/google"
+        android:src="@drawable/search"
         app:layout_constraintStart_toStartOf="@id/closeButton"
         app:layout_constraintTop_toTopOf="@id/closeButton" />
 
